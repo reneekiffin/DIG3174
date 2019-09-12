@@ -1,0 +1,55 @@
+@font-face
+{
+  font-family: "Caslon";
+  src: url(src/CaslonGraD.ttf) format("truetype");
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  width: 1080px;
+  margin: auto;
+}
+h1{
+  font-family: "Caslon";
+  color:#c0cfb4;
+}
+
+nav{
+  text-transform: uppercase;
+  font-size: .75em;
+}
+
+p{}
+
+.center{
+    width: 50%;
+    margin: 0 auto;
+
+  }
+
+.m-1{
+  margin:1em;
+}
+
+.m-2{
+  margin:2em;
+}
+
+#swing{
+   background-image: url("https://media.overstockart.com/optimized/cache/data/product_images/JF5879-1000x1000.jpg");
+
+}
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

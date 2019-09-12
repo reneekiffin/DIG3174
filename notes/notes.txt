@@ -1,0 +1,4 @@
+Fonts: ornamental
+colors
+favicon
+responsiveness
