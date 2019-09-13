@@ -4,52 +4,114 @@
   src: url(src/CaslonGraD.ttf) format("truetype");
 }
 
-
-body {
+body{
   font-family: 'Lato', sans-serif;
-  width: 1080px;
-  margin: auto;
 }
+
+.container {
+  margin: auto;
+  max-width: 1080px;
+  padding: 0px 50px 0px 50px;
+}
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: #c0cfb4;
+}
+
+/* selected link */
+a:active {
+  color: #c0cfb4;
+}
+
 h1{
   font-family: "Caslon";
   color:#c0cfb4;
+  font-size: 3em;
 }
-
+h2{
+  font-family: "Caslon";
+  color: lightgrey;
+  font-size: 1.5em;
+}
 nav{
   text-transform: uppercase;
   font-size: .75em;
+  word-spacing: 25px;
 }
 
 p{}
 
 .center{
-    width: 50%;
-    margin: 0 auto;
+    margin: auto;
 
   }
 
 .m-1{
   margin:1em;
 }
-
+.my-1{
+  margin-top:1em;
+  margin-bottom:1em;
+}
+.mx-1{
+  margin-left:1em;
+  margin-right:1em;
+}
 .m-2{
   margin:2em;
 }
+.my-2{
+  margin-top:2em;
+  margin-bottom:2em;
+}
 
-#swing{
-   background-image: url("https://media.overstockart.com/optimized/cache/data/product_images/JF5879-1000x1000.jpg");
+.mx-2{
+  margin-left:2em;
+  margin-right:2em;
+}
+.m-3{
+  margin:3em;
+}
+
+.small{
+  height:150px ;
+  width:150;
+
 
 }
+
+.rounded {
+  border-radius: 150px;
+  background-size: 150px;
+}
+#swing{
+   background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Fragonard%2C_The_Swing.jpg");
+   height: 100vh;
+   background-size: cover;
+   background-position: 0% 70% 40% 10%
+}
 .parallax {
-  /* The image used */
-  background-image: url("img_parallax.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+footer{
+  background-color: #c0cfb4;
+  color: white;
+  text-transform: uppercase;
+  font-size: .75em;
 }
