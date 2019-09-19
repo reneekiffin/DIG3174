@@ -54,6 +54,32 @@ nav{
 
 p{}
 
+.textblock{
+  background-color: white;
+  padding: 20px;
+  border: .5px solid #c0cfb4;
+
+}
+#artists{
+  position: relative;
+}
+#fragonard{
+  position: absolute;
+  z-index: 10;
+   top: 60px;
+   left: 620px;
+
+}
+#aboutfragonard{
+  background-color:#E3A073;
+  z-index: 1;
+  padding:50px;
+  width:200px;
+  color:white;
+  position: absolute;
+  top: 100px;
+  left: 600px;
+}
 .center{
     margin: auto;
 
