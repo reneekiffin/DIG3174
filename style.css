@@ -127,7 +127,7 @@ p{}
 
 .rounded {
   border-radius: 150px;
-  background-size: 150px;
+  background-size: ;
 }
 #swing{
    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Fragonard%2C_The_Swing.jpg");
@@ -142,10 +142,26 @@ p{}
   background-size: cover;
 }
 
-
 footer{
   background-color: #c0cfb4;
   color: white;
   text-transform: uppercase;
   font-size: .75em;
+}
+#footercontent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+#footercontent ul{
+  list-style: none;
+  order: 0;
+  flex-grow: 1;
+
+}
+#footer a,a:hover,a:visited{
+  color:black;
 }
