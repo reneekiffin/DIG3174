@@ -1,3 +1,5 @@
+@import "normalize.css";
+
 @font-face
 {
   font-family: "Caslon";
@@ -84,9 +86,41 @@ p{}
   margin:3em;
 }
 
+
+
+
+.p-1{
+  padding:1em;
+}
+.py-1{
+  padding-top:1em;
+  padding-bottom:1em;
+}
+.px-1{
+  padding-left:1em;
+  padding-right:1em;
+}
+.p-2{
+  padding:2em;
+}
+.py-2{
+  padding-top:2em;
+  padding-bottom:2em;
+}
+
+.px-2{
+  padding-left:2em;
+  padding-right:2em;
+}
+.p-3{
+  padding:3em;
+}
+
+
+
 .small{
   height:150px ;
-  width:150;
+  width:150px;
 
 
 }
