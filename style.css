@@ -8,6 +8,30 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  width:100%;
+}
+
+.bg-green{
+  background-color: #c0cfb4;
+}
+
+.bg-orange{
+background-color: #E3A073;
+}
+.bg-burntorange{
+  background-color: #D98341;
+}
+
+.bg-brown{
+  background-color: #6b3d08;
+}
+
+.bg-blush{
+  background-color: #D67071;
+}
+
+.white{
+  color:white;
 }
 
 .container {
@@ -41,10 +65,10 @@ h1{
   color:#c0cfb4;
   font-size: 3em;
 }
-h2{
+h2, h2 a:link{
   font-family: "Caslon";
   color: lightgrey;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 nav{
   text-transform: uppercase;
@@ -55,30 +79,49 @@ nav{
 p{}
 
 .textblock{
-  background-color: white;
+  background-color: BLACK;
   padding: 20px;
-  border: .5px solid #c0cfb4;
+  color:white;
 
 }
-#artists{
+.artists{
   position: relative;
 }
-#fragonard{
+.artisttitle{
   position: absolute;
   z-index: 10;
-   top: 60px;
-   left: 620px;
+}
+
+#fragonard{
+  top: 50px;
+  left: 610px;
+}
+
+#boucher{
+    top: 60px;
+    left:105px;
+  }
+.aboutartist{
+  z-index: 1;
+  width:250px;
+  color:white;
+  position: absolute;
 
 }
 #aboutfragonard{
   background-color:#E3A073;
-  z-index: 1;
-  padding:50px;
-  width:200px;
-  color:white;
-  position: absolute;
   top: 100px;
   left: 600px;
+}
+
+#aboutboucher{
+  background-color:#D98341;
+  top: 100px;
+  left:60px;
+
+
+}
+
 }
 .center{
     margin: auto;
@@ -173,6 +216,7 @@ footer{
   color: white;
   text-transform: uppercase;
   font-size: .75em;
+  clear:both;
 }
 #footercontent{
   display: flex;
