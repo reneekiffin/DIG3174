@@ -122,6 +122,21 @@ p{}
 
 }
 
+#artwork{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#artwork img{
+  height: 400px;
+}
+
+#artists{
+  height:1200px;
+}
 }
 .center{
     align-content:center;
