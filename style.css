@@ -112,12 +112,20 @@ p{}
   color:white;
 
 }
-.artists{
+.titcon{
   position: relative;
 }
-.artisttitle{
+.title{
   position: absolute;
   z-index: 10;
+}
+
+.content{
+  z-index: 1;
+  width:250px;
+  color:white;
+  position: absolute;
+
 }
 
 #fragonard{
@@ -129,13 +137,7 @@ p{}
     top: 60px;
     left:105px;
   }
-.aboutartist{
-  z-index: 1;
-  width:250px;
-  color:white;
-  position: absolute;
 
-}
 #aboutfragonard{
   background-color:#E3A073;
   top: 100px;
@@ -152,9 +154,13 @@ p{}
 
 #origin{
   clear:both;
+  margin-top:200px;
 }
 
+#art{
+  margin-top:425px;
 }
+
 .center{
     align-content:center;
     text-align: center;
