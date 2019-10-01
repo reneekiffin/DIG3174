@@ -11,12 +11,37 @@ body{
   width:100%;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 32.6666667% 32.6666667% 32.6666667%;
+  grid-gap:1%;
+
+
+
+}
+.img{
+  position: relative;
+  align-content: center;
+}
+
+.bottom{
+  position: absolute;
+  bottom:0;
+}
+figcaption{
+  text-align: center;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
 .bg-green{
   background-color: #c0cfb4;
 }
 
 .bg-orange{
-background-color: #E3A073;
+  background-color: #E3A073;
 }
 .bg-burntorange{
   background-color: #D98341;
@@ -32,6 +57,9 @@ background-color: #E3A073;
 
 .white{
   color:white;
+}
+.bg-black{
+  background-color: black;
 }
 
 .container {
@@ -70,6 +98,7 @@ h2, h2 a:link{
   color: lightgrey;
   font-size: 2em;
 }
+
 nav{
   text-transform: uppercase;
   font-size: .75em;
@@ -79,7 +108,6 @@ nav{
 p{}
 
 .textblock{
-  background-color: BLACK;
   padding: 20px;
   color:white;
 
@@ -122,6 +150,10 @@ p{}
 
 }
 
+#origin{
+  clear:both;
+}
+
 }
 .center{
     align-content:center;
@@ -140,6 +172,9 @@ p{}
   margin-left:1em;
   margin-right:1em;
 }
+.mb-1{
+  margin-bottom: 1em;
+}
 .m-2{
   margin:2em;
 }
@@ -152,8 +187,20 @@ p{}
   margin-left:2em;
   margin-right:2em;
 }
+.mb-2{
+  margin-bottom: 2em;
+}
 .m-3{
   margin:3em;
+}
+.my-3{
+  margin-top:3em;
+  margin-bottom:3em;
+}
+
+.mx-3{
+  margin-left:3em;
+  margin-right:3em;
 }
 
 
