@@ -7,15 +7,15 @@
   .grid {
     display: grid;
     grid-template-columns: auto auto;
-    background-color: #4bad97;
+    background-color:grey;
     padding: 10px;
     grid-gap: 10px
 
   }
 
   .grid-item {
-    background-color: #4abc86;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
     padding: 20px;
     font-size: 25px;
   }
@@ -25,4 +25,5 @@
 .long{
   grid-row: 2 /span 2;
 
+}
 }
