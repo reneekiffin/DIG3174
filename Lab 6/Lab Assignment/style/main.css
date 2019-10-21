@@ -1,0 +1,29 @@
+
+/*imports normalize*/
+@import "normalize.css";
+/*small screen*/
+@media screen and (max-width: 500px) {
+  /*grid 2 col*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color:grey;
+    padding: 10px;
+    grid-gap: 10px
+
+  }
+
+  .grid-item {
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
+    padding: 20px;
+    font-size: 25px;
+  }
+.wide {
+  grid-column: 1 / span 2;
+}
+.long{
+  grid-row: 2 /span 2;
+
+}
+}
