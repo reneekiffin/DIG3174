@@ -1,0 +1,117 @@
+
+/*imports normalize*/
+@import "normalize.css";
+
+/*import google font*/
+@import url('https://fonts.googleapis.com/css?family=Heebo:100&display=swap');
+
+/*small screen*/
+@media screen and (max-width: 600px) {
+  /*grid 1 col*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: white;
+  }
+}
+
+
+/*media query other*/
+@media screen and (min-width: 600px) {
+  /*grid 2 col*/
+  .grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+
+  }
+}
+
+
+/*making the image behave*/
+img{
+  width:100%;
+  display:block;
+}
+/*grid item format*/
+  .grid-item {
+    border: 1px solid darkgrey;
+    text-align: right;
+    justify-content: center;
+  }
+body{
+  font-family: 'Heebo', sans-serif;
+}
+/*header
+colours inspired by color of the year*/
+h1,h2,h3 {
+  color: #A79B82;
+
+  text-align: center;
+
+}
+
+p{
+
+}
+
+
+
+#navigation {
+
+}
+
+ul li{
+  display:inline;
+}
+
+footer {
+  padding:50px 0px 50px 0px;
+  background-color: #A79B82;
+  color:white;
+}
+
+
+.col3 {
+  grid-column: 1 / span 3;
+}
+.col2{
+  grid-row: 2 /span 2;
+
+}
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
