@@ -1,0 +1,72 @@
+prefers scss
+
+.sass makes a lot of assumptions
+
+
+How is this a valuable thing to do? to have variables that store information?
+
+*SASS*
+is a preprocessor file. a file that cannot be read by the browser.
+- using a terminal
+- install a third party program to output the file (http://koala-app.com/)
+solve and reduces common repetition
+uses scss or sass extension
+
+
+******************************************************************************
+
+What are variables and mixins?
+
+**variables**
+- a way to store information
+  strings, numbers. colors, booleans, lists, nulls
+  uses $symbol followed by name
+
+  Syntax
+  $variablename: value;
+
+  SCSS Syntax Example:
+      $myFont: Helvetica, sans-serif;
+      $myColor: red;
+      $myFontSize: 18px;
+      $myWidth: 680px;
+
+      body {
+        font-family: $myFont;
+        font-size: $myFontSize;
+        color: $myColor;
+      }
+
+      #container {
+        width: $myWidth;
+      }
+
+
+      CSS Output Example:
+
+      body {
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+        color: red;
+      }
+
+      #container {
+        width: 680px;
+      }
+
+
+**What is a @mixin**
+a box/modular container you can put functionality into
+
+you're giving the name to this packet. his packet is called fancy. if someone if using this name with the import command it loads this packet.
+
+Example:
+
+@mixin fancy{
+    h1{
+        font-family: $fancy1;
+    }
+    p{
+        font-family: $fancy2;
+    }
+}
