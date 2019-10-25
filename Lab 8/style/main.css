@@ -1,34 +1,40 @@
 /*the standard CSS comments will show up on the output
 .css file*/
+p {
+  font-size: 2em;
+  color: #d1fff4;
+  background-color: #2e000b;
+  padding: 1em; }
+
 .list {
   /*formats the lsit*/ }
   .list ul {
-    font-size: 30px;
+    font-size: 1em;
     font-family: Georgia;
-    color: #AFB4C3; }
+    color: #ffd1dc; }
     .list ul li {
-      font-size: 24px; }
+      font-size: 1em; }
   .list .standard {
-    color: #c3beaf; }
+    color: #d1fff4; }
   .list .different {
-    color: #504b3c;
-    background-color: #c3beaf; }
+    color: #002e23;
+    background-color: #d1fff4; }
 
 /*media query for grid*/
 @media screen and (max-width: 1000px) {
   .grid {
     display: grid;
     grid-template-columns: auto;
-    background-color: #5b5c5f; } }
+    background-color: #453c3e; } }
 @media screen and (min-width: 1000px) {
   .grid {
     display: grid;
     grid-template-columns: auto auto;
-    background-color: #5b5c5f; } }
+    background-color: #453c3e; } }
 /*formats the grid item*/
 .grid-item {
-  background-color: #464646;
-  border: 1px solid #5b5b5f;
+  background-color: #171717;
+  border: 1px solid #453d3c;
   margin: 10px; }
 
 /*# sourceMappingURL=main.css.map */

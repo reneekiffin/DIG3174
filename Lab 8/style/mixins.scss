@@ -25,6 +25,14 @@
   }
 
 }
+
+p{
+
+  font-size: $psize;
+  color:$pcolor;
+  background-color:$pbgcolor;
+  padding: $padding;
+}
 //grid mixin
 @mixin grid{
   /*media query for grid*/

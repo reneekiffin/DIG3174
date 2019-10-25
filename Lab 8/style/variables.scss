@@ -1,10 +1,10 @@
 //typography
-$ulsize: 30px;
+$ulsize: 1em;
 $lisize: round($ulsize*.8);
 $ulfont: Georgia;
 
 //colors
-$ulcolor: #AFB4C3;
+$ulcolor: #ffd1dc;
 $licolor: complement($ulcolor);
 $licolordiff: invert($ulcolor);
 $bgcolorgrit: invert(grayscale($ulcolor));
@@ -13,3 +13,11 @@ $bgcolorborder: adjust-hue($bgcolorgr, 20);
 
 //screensize
 $screen: 1000px;
+
+
+
+//paragraph
+$psize: 2em;
+$pcolor: #d1fff4;
+$pbgcolor: invert($pcolor);
+$padding: 1em;
