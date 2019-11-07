@@ -28,9 +28,10 @@
   <div class="grid-item">
     <nav>
       <ul>
-        <a href="portfolio.html"><li>PORTFOLIO</li></a>
-        <a href="about.html"><li>ABOUT</li></a>
-        <a href="contact.html"><li>CONTACT</li></a>
+        <a href="#about"><li>ABOUT</li></a>
+        <a href="#portfolio"><li>PORTFOLIO</li></a>
+        <a href="#services"><li>SERVICES</li></a>
+        <a href="#contact"><li>CONTACT</li></a>
       </ul>
   </nav>
 
@@ -39,23 +40,25 @@
 <!--first row-->
 
   <div class="grid">
-    <div class="grid-item">
-    </div>
-    <div class="grid-item">
-      <h1>Renee Kiffin</h1>
+
+    <div id="intro" class="grid-item col3">
+      <a name="about"><h1>Renee Kiffin</h1></a>
       <h2>Photography</h2>
-      <p>Hello,  , a photographer based in Orlando, Florida.<p>
+      <p>Hello, I'm a photographer based in Orlando, Florida.<p>
+        <p>This is where I would include more information about when I started, how I started and why I love photography. </p>
+        <p>Speak about my mission statement and how I love to work with clients and capture precious memories and experiences.<p>
     </div>
-    <div class="grid-item">
-    </div>
+
   </div>
 
-<!--second row-->
-  <div class="grid">
-    <div class="grid-item">
-      Every picture tells a story..
-    </div>
+<!--Portfolio-->
+<div class="grid">
+  <div class="grid-item col3">
+    <a name="portfolio"><h2>PORTFOLIO</h2></a>
   </div>
+</div>
+
+
 
   <div class="grid">
 
@@ -95,38 +98,84 @@
 
             </a>
           </div>
+    </div>
 
+<!-- Contact-->
+    <div class="grid">
+      <div class="grid-item">
+      </div>
+      <div id="services" class="grid-item">
+        <a name="services"><h2>SERVICES</h2></a>
+        <ul>
+          <li>Headshots</li>
+          <li>Portraiture</li>
+          <li>Graduation</li>
+          <li>Maternity</li>
+          <li>Wedding</li>
+          <li>Anniversary</li>
+        </ul>
+      </div>
+      <div class="grid-item">
+      </div>
     </div>
 
     <div class="grid">
+      <div class="grid-item">
+      </div>
 
-    <div class="grid-item col3">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d224444.5523938532!2d-81.36875!3d28.4811689!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x72cb1f12f117baf4!2sRenee%20Kiffin!5e0!3m2!1sen!2sus!4v1571360645599!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <div class="grid-item">
+        <a name="contact"><h2>CONTACT</h2></a>
+      <form action="">
 
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
     </div>
 
-
+    <div class="grid-item">
+    </div>
   </div>
 
+
+<!-- Location-->
+    <div class="grid">
+    <div class="grid-item col3">
+      <h2>LOCATION</h2>
+      <!-- Google Maps Location -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d224444.5523938532!2d-81.36875!3d28.4811689!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x72cb1f12f117baf4!2sRenee%20Kiffin!5e0!3m2!1sen!2sus!4v1571360645599!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </div>
+
+<!-- Footer-->
 <footer>
-  <section class="grid">
-    <!-- Google Maps Location -->
-    <section class="grid-item">
-    </section>
+  <div class="grid">
+
+    <div class="grid-item">
+    </div>
 
     <!-- Social Media-->
-    <section class="grid-item">
-    Follow Me on Social media
+    <div class="grid-item">
+    Follow Me on Social Media
     <ul>
       <a href="https://instagram.com/reneekiffin"><li>Instagram</li></a>
       <a href="https://facebook.com/reneekiffin"><li>Facebook</li></a>
       <a href="https://linked.in/reneekiffin"><li>LinkedIn</li></a>
+    </ul>
+    </div>
 
-    </section>
 <!-- Another Item -->
-    <section class="grid-item">
-    </section>
-  </section>
+    <div class="grid-item">
+    </div>
+  </div>
 </footer>
 
 </body>

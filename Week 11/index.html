@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head section contains metadata (not displayed in page)-->
+
+<head>
+  <!--Title displayed in browser tab-->
+  <title>Review</title>
+  <!--Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--css-->
+  <link rel="stylesheet" href="style/main.css">
+  <!--favicon-->
+  <link rel="shortcut icon" href="img/favicon.ico" />
+</head>
+
+<header>
+  <div class ="nav">
+    <div class = "left">
+      <h1>DIG 3171C</h1>
+    </div>
+    <div class = "right">
+      <h1>Front End Design</h1>
+    </div>
+  </div>
+
+</header>
+<body>
+  <br>
+  <p id = "intro">This page is meant to go over some familiar concepts while exploring
+    some new ones.  We've covered a fair bit of content over the course of this semester,
+    and everything is fair game for the final major assignment.  We are hitting all the
+    major topics discussed in labs over the course of this semester.  That means we are
+    going to hit the head tag, CSS, grids, images, and SASS.</p>
+  <br>
+  <div class = "grid">
+    <div class = "grid-item n1">
+      <h2>Head Section</h2>
+    </div>
+    <div class = "grid-item n2">
+      <h2>Example</h2>
+    </div>
+    <div class = "grid-item n3">
+      <p>This should feel very familiar by now.  We are at the start of the index.html page.
+      A lot of these lines of script should be in a template so that you can bring them in whenever
+      you need them.  In the head section, there is the title (displayed in browser tab), viewport,
+      CSS link, and favicon link.  Note that favicons should be in the ico format, and they will not
+      display in Edge without a server request (in other words, they won't be visible in Edge until you
+      upload your site to the server.)  In terms of getting ready for the final, this stuff is bare minimum
+      in terms of best practices.  Make sure you have it down.</p>
+    </div>
+    <div class = "grid-item n4">
+      <img src= "img/head1.png" alt = "Opening of index.html, lines 1 through 14.">
+    </div>
+    <div class = "grid-item n5">
+      <h2>Classes and Ids</h2>
+    </div>
+    <div class = "grid-item n7">
+      <h2>Example</h2>
+    </div>
+    <div class = "grid-item n6">
+      <p>Fundemental to localized control of a website are classes and ids.  Classes are deeply flexible.
+      They can be used to apply formatting to groups of elements thanks to nesting (which is why we often
+      use them with divs).  Ids, on the other hand, are precision tools.  An id is a unique identifier
+      (hence the name), so they are used when one element needs a little extra attention, but you don't want
+      the rest of your page to be affected by the CSS.  In this case, I am using the class "nav" to set up
+      a simple grid.  Much more interesting are the classes "left" and "right."  Using a media query, these
+      h1 tags are aligned on either side of the site in a wide display and centered in a narrow one.  The id
+      "intro" is being used to add margins to the p element on line 29.  I cannot simply apply it to all p
+      tags because it would then muck up paragraphs like the one you're reading right now.</p>
+    </div>
+    <div class = "grid-item n8">
+      <img src = "img/class_id.png" alt="classes and ids in index.html: classes on lines 17, 18, and 21; id on line 29.">
+    </div>
+    <div class = "grid-item n9">
+      <h2>Images</h2>
+    </div>
+    <div class = "grid-item n11">
+      <h2>Example</h2>
+    </div>
+    <div class = "grid-item n10">
+      <p>As content elements, images often represent the trouble makers.  Simply put, they are not easy to style
+      in the way that we can other elements.  However, they represented a significant improvement for the early web
+      and are a hallmark of the modern internet.  They are efficient information delivery systems that get to concepts
+      which would be much more difficult without them.  Thus, we put up with their difficulties.  In the case of this
+      page, they solved a conceptual problem.  Printing HTML on a website is a drag.  You can do it, but it's quite
+      a headache and makes the index file much less readable.  Using screenshots from the script files is a tidy
+      solution to that problem.  In this case, the example is showing an img srcset, complete with a fallback image
+      two sizes, and alt text.  You likely will only need to worry about source sets when using an image heavy site
+       but having that skill in your pocket will make those sites much more useful on mobile (especially when users
+       are off wifi).</p>
+    </div>
+    <div class = "grid-item n12">
+        <img src="img/image.png"
+        srcset ="img/imagelg.png 1800w,
+        img/imagesm.png 1000w,"
+        sizes=100%
+        alt="an image of script for an image set">
+    </div>
+    <div class = "grid-item n13">
+      <h2>Preprocessor</h2>
+    </div>
+    <div class = "grid-item n15">
+      <h2>Example</h2>
+    </div>
+    <div class = "grid-item n14">
+      <p>Reviewing preprocessors creates a unique conceptual problem.  We talked about them pretty late in the semester,
+      but they are best when implemented from the start of a project.  The reason for this disparity is where the learning curve
+      lies.  You have to understand CSS as a style language in order to get any mileage out of SASS.  Thus, for this review,
+      I begin with the SCSS files in order to show how they work with the CSS concepts.  We've talked about modularity, and lines
+      2-6 illustrate this idea.  The file architechture is laid out on the top.  There is index, our main html page, main.css, the
+      single output style file (which is quite large), then main.scss (the file that is being processed into a CSS file),
+      mixins.scss (which contains, unsurprisingly, mixins), and stylevars.scss (which holds the variables we are using).  This is a good time
+      to remind you that you have all of these source files.  Feel free to look them over as you are going through this page.  In the second
+      image, you can see that the margins are being set by a variable (which is delcared in stylevars.scss).</p>
+    </div>
+    <div class = "grid-item n16">
+        <img src="img/import.png" alt="a series of imports and includes in main.scss lines 2-6">
+        <img src="img/mqgridwide.png" alt="a series of imports and includes in main.scss lines 2-6">
+        <p class = "note">***It is worth it to go back to media queries and grids for a moment here.  Media queries typically
+          rely on min or max width, and these set up break points.  As for grids, they give us flexibility on how
+          content is displayed on the page.  In this case, the header section is an auto spaced 2 col grid, and the
+          grid in the body is 2 columns, but those columns are spaced into 3/7 and 4/7 (giving slightly more space to the image
+          column).</p>
+    </div>
+    <div class = "grid-item n17">
+      <h2>Variables</h2>
+    </div>
+    <div class = "grid-item n19">
+      <h2>Example</h2>
+    </div>
+    <div class = "grid-item n18">
+      <p>When bulding a group of SASS files, doing so with an eye to
+      efficiency and modularity is important.  In this case, I wanted
+      some options on the font that I would be using.  Because this is
+      a site that is talking about scripting, I wanted that feel throughout.
+        One way to capture that is through a monospace font.  Looking at
+      main.scss, it is clear that I used a set of variables for the fonts on
+      h1, h2, and p.  Having this setup makes testing easy.  Just as importantly,
+      I now have these font names lined out with a bit of description.  In lines
+      18-20 of stylevars.scss, I can assign them quickly, and it will update
+      automatically in my main.css file (I wasn't certain what margins and pads
+      I wanted on the sides in the desk version, so the $space variable was helpful
+      in making those tweaks).  <br><br>Some of you have expressed concerns about how these
+      variables are useful.  To be clear, they are not variables for the user.  They
+      don't add functionality to the finished site.  This might make them feel
+      less dynamic than variables in something like Javascript, but this is
+      more of a conceptual issue.  The variables aren't for the user.  They are for
+      you (the developer).  They make spot tweaking the site a breeze.  They make
+      automation of tasks that would take a while quicker.  (more on that in the
+      next section).</p>
+    </div>
+    <div class = "grid-item n20">
+        <img src="img/vars.png" alt="Variables declared in stylevars.scss (lines 3-23) and thier use in main.scss (lines
+        98, 105, and 111)">
+    </div>
+    <div class = "grid-item n21">
+      <h2>Mixins</h2>
+    </div>
+    <div class = "grid-item n23">
+      <h2>Example</h2>
+    </div>
+    <div class = "grid-item n22">
+      <p>Automating tasks is a good thing.  It frees up time for you
+      to be creative.  These mixins are demonstrative of this idea
+      that you can create a task here and not have to worry about it.
+      As we were just talking about typography above, take a look at line 11.
+      Each of those fonts in the stylevars page is from Google.  Now, we could
+      update the statement every single time to import those fonts.  Or, we can
+      just inject the correct variable directly into the URL.  Remember, in
+      lines 2 and 3 of main.scss, I imported the mixins and stylevars
+      files.  However, that just menas they are available.  They have to be used
+      in a way that will meaningfully impact the css for the script to actually write.
+      Thus, when I incldue font (line 6 of main.scss), it drops all three of those font
+      imports.  And it makes the selction based on the values of those variables.<br>
+      <br>  Jumping back up to line 2 of mixins.scss, this automates a process that
+      would take an exhaustive amount of time to do manually.  And it solves a problem
+      which has been lurking in this project's design.  The basic setup for this project is a
+      2 column grid that drops to 1 after the breakpoint.  The issue is how this is
+      displayed.  The format for a row (in 2 col view) is HSection / HExample or text/image .
+      This works out like a table and displays information logically because text is always
+      under header for its section, and the image is always under the header for the example.
+      But, once the page drops to 1 col, the row format changes. The headers are stacked and
+      so are the content boxes.  This is why the class  group n# was created.  In desktop view,
+      the grid is displayed based on the order of items in the HTML, in mobile, it is displayed
+      based on the numeric ordering of the n# class assigned to it.<br>
+      <br>The easy answer, then, is to automate it based on the number of rows.
+      In my case, I have been updating the $grid-rows variable with each new section I add (adding 4),
+      and this has let me see the output immediately.  The @for statement says to start with
+      $i=1 and generate a line (or group) of CSS until it reaches the upper limit set by $grid-rows.
+      In the second image here, the css has the correct position of each item in mobile based on
+      the n# class it was given in the html.<br>
+      <br>Remember that this process only gets used when it is actually included.  In my case,
+      the include command is on line 15 of main.scss.  It is within the mobile sizing, and after the
+      grid declaration.  The benefit of this is that I wrote 9 lines of CSS and output 70 lines.  Automation
+      </p>
+    </div>
+    <div class = "grid-item n24">
+        <img src="img/mixins.png" alt="Two mixins in mixins.scss, line 11 imports Google fonts.
+        and line 2 generates a mobile grid.">
+        <img src="img/noutput.png" alt = "In the css page, an entry is created for each n class, putting
+        it on the nth row.">
+    </div>
+    <div class = "grid-item n25">
+      <h2>Using this to Review</h2>
+    </div>
+    <div class = "grid-item n26">
+      <p>This page has covered most of the big concepts that we have gone over
+        this semester thusfar.  When you are reviewing it, you can view the html in a
+        browser, and you can dig into the individual files.  Ideally, this will
+        help you review these big ideas.
+    </div>
+  </div>
+</body>
+</html>

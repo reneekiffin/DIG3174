@@ -1,0 +1,19 @@
+//outputs a 1 col grid with grid-items in the correct order
+@mixin mobile-grid {
+$grid-rows:26;
+  @for $i from 1 through $grid-rows {
+    .n#{$i} {
+      grid-row: $i/ span 1;
+    }
+  }
+}
+//imports Google fonts based on the selections made in the stylevars scss page
+@mixin font{
+  //head font
+  @import url('https://fonts.googleapis.com/css?family=#{$fhead1}');
+  //head2 font
+  @import url('https://fonts.googleapis.com/css?family=#{$fhead2}');
+  //body font
+  @import url('https://fonts.googleapis.com/css?family=#{$fbody}');
+
+}

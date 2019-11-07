@@ -1,0 +1,132 @@
+//brings in the various files and mixins
+@import 'normalize';
+@import 'mixins';
+@import 'stylevars';
+@include normalize;
+//uses the font mixin to access the Google fonts
+@include font;
+@media screen and (max-width: 800px) {
+
+  /*grid 2 col*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+    //brings in the n# classes and assigns them to the correct row.
+    @include mobile-grid;
+
+
+  .nav{
+    display:grid;
+    grid-template-columns: auto;
+  }
+
+  #intro{
+    margin-left:5px;
+  }
+
+  h1{
+    text-align:center;
+  }
+  .left{
+    border-bottom: 1px dotted black;
+  }
+
+  p{
+    font-size:25px;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+
+  /*grid 2 col*/
+  .nav{
+    display:grid;
+    grid-template-columns: auto auto;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    margin-left: $space;
+    margin-right: $space;
+  }
+
+  .left{
+    text-align:left;
+  }
+
+  .right{
+    text-align:right;
+  }
+
+  header{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#intro{
+  margin-left: $space;
+  margin-right: $space;
+}
+
+p{
+  font-size:20px;
+}
+
+.note{
+  font-size:18px;
+}
+
+.n25{
+  grid-column:1 / span 2;
+}
+
+.n26{
+  grid-column:1 / 3;
+
+}
+}
+  .grid-item {
+    background-color: 	#fbfbfb;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+  }
+
+  body{
+    background-color: 	#fffff2;
+  }
+
+  .grid {
+    background-color: #838996;
+    padding: 5px;
+    grid-gap: 3px;
+  }
+
+h1{
+  font-family:$fhead1;
+  font-size:40px;
+  margin: 0 0 0 0;
+}
+
+
+h2{
+  font-family:$fhead2;
+  text-align: center;
+  font-size:30px;
+}
+
+p{
+  font-family: $fbody;
+}
+
+img{
+  width:100%;
+}
+
+header{
+  background-color:#eeeeee;
+  border:1px solid black;
+  padding-top:-15px;
+  padding-bottom:-15px;
+}

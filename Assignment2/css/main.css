@@ -34,12 +34,13 @@ img{
 }
 /*grid item format*/
   .grid-item {
-    border: 1px solid darkgrey;
+  /*  border: 1px solid darkgrey;*/
     text-align: right;
     justify-content: center;
   }
 body{
   font-family: 'Heebo', sans-serif;
+  text-align: center;
 }
 /*header
 colours inspired by color of the year*/
@@ -50,6 +51,10 @@ h1,h2,h3 {
 
 }
 
+h2{
+  padding:20px;
+}
+
 p{
 
 }
@@ -57,25 +62,44 @@ p{
 
 
 #navigation {
+  background-color: #A79B82;
+}
+
+#navigation a, footer a:hover, footer a:visited{
+  color:white;
+  text-decoration: none;
 
 }
 
-ul li{
+#navigation a:hover, footer a:hover{
+  text-decoration: line-through;
+
+}
+
+#navigation ul li,footer ul li{
   display:inline;
+  text-align: center;
 }
+
+#intro{
+  text-align: center;
+}
+
 
 footer {
   padding:50px 0px 50px 0px;
   background-color: #A79B82;
   color:white;
+  text-align: center;
 }
 
 
 .col3 {
   grid-column: 1 / span 3;
 }
+
 .col2{
-  grid-row: 2 /span 2;
+  grid-row: 2 / span 2;
 
 }
 
@@ -114,4 +138,12 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+#services{
+  text-align: center;
+}
+
+#services ul{
+  list-style: none;
 }
