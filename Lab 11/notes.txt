@@ -1,0 +1,5 @@
+What is the difference between partials and mixins
+
+similarities and differences between mixins and partials
+
+How are partials like mixins?
