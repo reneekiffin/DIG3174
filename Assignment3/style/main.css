@@ -28,7 +28,8 @@ p {
 h1 {
   font-family: "Playfair Display", serif;
   color: #00B798;
-  font-size: 2em; }
+  font-size: 2em;
+  text-align: center; }
 
 h3 {
   font-family: "Playfair Display", serif;
@@ -38,5 +39,11 @@ h3 {
 p {
   font-family: "Averia Serif Libre", cursive;
   font-size: 1em; }
+
+.col2 {
+  grid-column: span 2; }
+
+.col3 {
+  grid-column: span 3; }
 
 /*# sourceMappingURL=main.css.map */
