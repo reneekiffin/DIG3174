@@ -1,0 +1,15 @@
+//makes the other SCSS files available
+@import "variables";
+@import "mixins";
+@import "_grid";
+
+//includes styling to actually appear in the output CSS file
+//This first include calls the typography mixin, making the fonts available.
+@include typography;
+//This include calls one of the three mixins fancy, stark, or serious.  By changing the one word, we are able to make a number of changes.
+@include fontstyle;
+
+
+//.item1{
+//  grid-column: 2/ span 2;
+//}

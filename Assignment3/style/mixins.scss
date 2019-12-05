@@ -1,0 +1,15 @@
+//Mixins are blocks of style that together achieve a specific function in the output CSS
+//This first mixin imports the Google fonts for this project.
+@mixin typography{
+    @import url('https://fonts.googleapis.com/css?family=Fascinate+Inline|Liu+Jian+Mao+Cao|Open+Sans+Condensed:300|Patua+One|Roboto+Mono|Ropa+Sans&display=swap');
+}
+
+//The following three mixins exist to make swapping easy.  In variables.scss, the names fancy, stark, and serious were used to categorize materials.  Here, we have created a mixin for each of them.
+@mixin fontstyle{
+    h1{
+        font-family: $header;
+    }
+    p{
+        font-family: $paragraph;
+    }
+}

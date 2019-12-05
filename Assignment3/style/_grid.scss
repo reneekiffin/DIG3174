@@ -1,0 +1,38 @@
+@media screen and (max-width: 800px) {
+  /*grid 1 col*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    grid-gap:10px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  /*grid 2 col*/
+  .grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  grid-gap:10px;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  /*grid 3 col*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap:10px;
+  }
+}
+
+
+
+/*font*/
+
+p{
+  font-family:'Roboto';
+  font-size: 32px;
+}

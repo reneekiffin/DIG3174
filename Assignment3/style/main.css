@@ -1,35 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Fascinate+Inline|Liu+Jian+Mao+Cao|Open+Sans+Condensed:300|Patua+One|Roboto+Mono|Ropa+Sans&display=swap");
 @media screen and (max-width: 800px) {
   /*grid 1 col*/
   .grid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: #feda84;
+    grid-template-columns: auto;
     padding: 10px;
     grid-gap: 10px; } }
 @media screen and (min-width: 801px) {
   /*grid 2 col*/
   .grid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: #ffea94;
+    grid-template-columns: auto auto;
     padding: 10px;
     grid-gap: 10px; } }
 @media screen and (min-width: 1001px) {
   /*grid 3 col*/
   .grid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: #fffaa4;
+    grid-template-columns: auto auto auto;
     padding: 10px;
     grid-gap: 10px; } }
-/*grid item format*/
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8); }
-
 /*font*/
 p {
   font-family: 'Roboto';
   font-size: 32px; }
+
+h1 {
+  font-family: "Liu Jian Mao Cao", cursive; }
+
+p {
+  font-family: "Open Sans Condensed", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
