@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Fascinate+Inline|Liu+Jian+Mao+Cao|Open+Sans+Condensed:300|Patua+One|Roboto+Mono|Ropa+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap");
 @media screen and (max-width: 800px) {
   /*grid 1 col*/
   .grid {
@@ -26,7 +26,7 @@ p {
   font-size: 32px; }
 
 h1 {
-  font-family: "Liu Jian Mao Cao", cursive; }
+  font-family: "Averia Serif Libre", cursive; }
 
 p {
   font-family: "Open Sans Condensed", sans-serif; }
