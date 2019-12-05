@@ -1,15 +1,24 @@
 //Mixins are blocks of style that together achieve a specific function in the output CSS
 //This first mixin imports the Google fonts for this project.
 @mixin typography{
-    @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Playfair+Display:900&display=swap');
   }
 
 //The following three mixins exist to make swapping easy.  In variables.scss, the names fancy, stark, and serious were used to categorize materials.  Here, we have created a mixin for each of them.
 @mixin fontstyle{
     h1{
         font-family: $header;
+        color:$brandcolor;
+        font-size: 2em;
+    }
+    h3{
+      font-family: $header;
+      font-size: 1.25em;
+      color:$muted;
+
     }
     p{
         font-family: $paragraph;
+        font-size: 1em;
     }
 }
